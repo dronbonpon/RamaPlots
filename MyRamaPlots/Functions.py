@@ -28,8 +28,6 @@ def torsion(p1, p2, p3, p4):
     """
     Function to calculate torsion angle for atoms a,b,c, and d
     """
-    # Equation from http://www.stem2.org/je/proteina.pdf
-    # Import libraries
 
     # Get coordinates for vectors q1, q2 and q3
     q1 = np.subtract(p2, p1)  # b - a
@@ -67,7 +65,6 @@ def calc_torsion(list_of_atoms_in):
     n = np.array([[0] * columns] * rows, float)
     ca = np.array([[0] * columns] * rows, float)
     # Set up counts
-
     count_ca = 0
     count_co = 0
     count_n = 0
@@ -107,7 +104,6 @@ def plot(x, y, x_label_in, y_label_in):
     """
     Function to plot two one-dimensional arrays
     """
-    # Import libraries
     # Generate plot
     plt.plot(x, y, ".")
     plt.xlim(-180, 180)  # Sets axis limits
